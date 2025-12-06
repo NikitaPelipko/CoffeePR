@@ -6,139 +6,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revo Coffee</title>
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
+<body class="page">
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="#" class="header__logo-link">
+                    <img src="assets/img/LOGO.png" alt="Logo" class="header__logo-image">
+                </a>
+            </div>          
 
-<body>
-    <header>
-        <a href="#" class="logo">
-            <img src="assets/img/LOGO.png" alt="Logo">
-        </a>
-
-        <nav>
-            <ul>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#coffee">Кофе</a></li>
-                <li><a href="#combo">Комбо</a></li>
-                <li><a href="#giftset">Подарочные наборы</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <button type="button">Купить сейчас</button>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--active">
+                        <a class="nav__link" href="#about">О нас</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a class="nav__link" href="#coffee">Кофе</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a class="nav__link" href="#combo">Комбо</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a class="nav__link" href="#giftset">Подарочные наборы</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a class="nav__link" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="about">
-            <h1>Ваш персонализированный кофе</h1>
+    <main class="page__main">
+        <section id="about" class="hero">
+            <div class="hero__inner">
+                <article class="hero__content">
+                    <h1 class="hero__title">Ваш персонализированный кофе</h1>
 
-            <article>
-                <h2>О бренде Revo Coffee</h2>
-                <p>Revo Coffee - 2018.</p>
-                <p>Зёрна арабики и робусты тщательно отбираются из лучших источников,
-                    обжариваются и молотятся для создания чистого вкуса.</p>
-                <button type="button">Собрать свой кофе</button>
-            </article>
-        </section>
-        <section id="coffee">
-            <h2>Выберите свой любимый</h2>
-            <p>Сорта кофе для ежедневного удовольствия.</p>
+                    <h2 class="hero__subtitle">О бренде Revo Coffee</h2>
+                    <p class="hero__text">Revo Coffee - 2018.</p>
+                    <p class="hero__text">
+                        Зёрна арабики и робусты тщательно отбираются из лучших источников,
+                        обжариваются и молотятся для создания чистого вкуса.
+                    </p>
 
-            <div class="products">
-
-                <article class="product-card">
-                    <img src="assets/img/morning.png" alt="Кофе Revo Утро">
-                    <h3>Revo Утро</h3>
-                    <p>Крепкий, слегка сладкий, цветочный аромат.</p>
-                    <p>Цена: 99.000 ₽</p>
-                    <button type="button">Купить сейчас</button>
-                    <a href="#">Подробнее</a>
-                </article>
-
-                <article class="product-card">
-                    <img src="assets/img/origin.png" alt="Кофе Revo Оригинал">
-                    <h3>Revo Оригинал</h3>
-                    <p>Послевкусие сладкое, натуральное, лёгкая кислинка.</p>
-                    <p>Цена: 139.000 ₽</p>
-                    <button type="button">Купить сейчас</button>
-                    <a href="#">Подробнее</a>
-                </article>
-
-                <article class="product-card">
-                    <img src="assets/img/everyday.png" alt="Кофе Revo Каждый день">
-                    <h3>Revo Каждый день</h3>
-                    <p>Сбалансированный, лёгкий аромат, шоколадные ноты.</p>
-                    <p>Цена: 85.000 ₽</p>
-                    <button type="button">Купить сейчас</button>
-                    <a href="#">Подробнее</a>
-                </article>
-
-                <article class="product-card">
-                    <img src="assets/img/strong.png" alt="Кофе Revo Крепкий">
-                    <h3>Revo Крепкий</h3>
-                    <p>Крепкий, сладкий, традиционный вкус.</p>
-                    <p>Цена: 75.000 ₽</p>
-                    <button type="button">Купить сейчас</button>
-                    <a href="#">Подробнее</a>
+                    <div class="hero__actions">
+                        <button type="button" class="button button--primary">Собрать свой кофе</button>
+                    </div>
                 </article>
             </div>
         </section>
 
-        <section id="giftset">
-            <h2>Подарочный набор вьетнамского кофе</h2>
-            <p>Идеальный подарок для ценителей кофе.</p>
+        <section id="coffee" class="section section--light">
+            <header class="section__header">
+                <h2 class="section__title">Выберите свой любимый</h2>
+                <p class="section__description">Сорта кофе для ежедневного удовольствия.</p>
+            </header>
 
-            <div class="products">
-                <article class="product-card">
-                    <img src="assets/img/giftset.png" alt="Подарочный набор Revo Coffee">
-                    <h3>Revo Giftset</h3>
-                    <p>Зёрна кофе тщательно отбираются Revo, обжариваются современными технологиями
-                        с секретами мастеров, создавая чистый вкус специально для вас.</p>
-                    <p>Цена: 285.000 ₽</p>
-                    <button type="button">Купить сейчас</button>
-                    <a href="#">Подробнее</a>
+
+             <div class="section__content cards">
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="assets/img/morning.png" alt="Кофе Revo Утро" class="card__image">
+                    </div>
+                    <h3 class="card__title">Revo Утро</h3>
+                    <p class="card__description">Крепкий, слегка сладкий, цветочный аромат.</p>
+                    <p class="card__price">Цена: 99.000 ₽</p>
+                    <div class="card__actions">
+                        <button type="button" class="button button--primary">Купить сейчас</button>
+                        <a href="#" class="card__link">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="assets/img/origin.png" alt="Кофе Revo Оригинал" class="card__image">
+                    </div>
+                    <h3 class="card__title">Revo Оригинал</h3>
+                    <p class="card__description">Послевкусие сладкое, натуральное, лёгкая кислинка.</p>
+                    <p class="card__price">Цена: 139.000 ₽</p>
+                    <div class="card__actions">
+                        <button type="button" class="button button--primary">Купить сейчас</button>
+                        <a href="#" class="card__link">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="assets/img/everyday.png" alt="Кофе Revo Каждый день" class="card__image">
+                    </div>
+                    <h3 class="card__title">Revo Каждый день</h3>
+                    <p class="card__description">Сбалансированный, лёгкий аромат, шоколадные ноты.</p>
+                    <p class="card__price">Цена: 85.000 ₽</p>
+                    <div class="card__actions">
+                        <button type="button" class="button button--primary">Купить сейчас</button>
+                        <a href="#" class="card__link">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="assets/img/strong.png" alt="Кофе Revo Крепкий" class="card__image">
+                    </div>
+                    <h3 class="card__title">Revo Крепкий</h3>
+                    <p class="card__description">Крепкий, сладкий, традиционный вкус.</p>
+                    <p class="card__price">Цена: 75.000 ₽</p>
+                    <div class="card__actions">
+                        <button type="button" class="button button--primary">Купить сейчас</button>
+                        <a href="#" class="card__link">Подробнее</a>
+                    </div>
                 </article>
             </div>
         </section>
 
-        <section id="combo">
-            <h2>Комбо для бодрости</h2>
-            <p>Комбо кофе для продуктивного дня.</p>
+        <section id="giftset" class="section section--muted">
+            <header class="section__header">
+                <h2 class="section__title">Подарочный набор вьетнамского кофе</h2>
+                <p class="section__description">Идеальный подарок для ценителей кофе.</p>
+            </header>
 
-            <div class="products">
-                <article class="product-card">
-                    <img src="assets/img/combo-strong.png" alt="Комбо Revo Крепкий">
-                    <h3>Комбо Revo Крепкий</h3>
-                    <p>Высокое содержание кофеина для бодрости на работе.</p>
-                    <p>Цена: 147.000 ₽</p>
-                    <button type="button">Купить сейчас</button>
-                    <a href="#">Подробнее</a>
+            <div class="section__content cards cards--3">
+                <article class="card card--featured">
+                    <div class="card__image-wrapper">
+                        <img src="assets/img/giftset.png" alt="Подарочный набор Revo Coffee" class="card__image">
+                    </div>
+                    <h3 class="card__title">Revo Giftset</h3>
+                    <p class="card__description">
+                        Зёрна кофе тщательно отбираются Revo, обжариваются современными технологиями
+                        с секретами мастеров, создавая чистый вкус специально для вас.
+                    </p>
+                    <p class="card__price">Цена: 285.000 ₽</p>
+                    <div class="card__actions">
+                        <button type="button" class="button button--primary">Купить сейчас</button>
+                        <a href="#" class="card__link">Подробнее</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="combo" class="section section--light">
+            <header class="section__header">
+                <h2 class="section__title">Комбо для бодрости</h2>
+                <p class="section__description">Комбо кофе для продуктивного дня.</p>
+            </header>
+
+            <div class="section__content cards cards--3">
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="assets/img/combo-strong.png" alt="Комбо Revo Крепкий" class="card__image">
+                    </div>
+                    <h3 class="card__title">Комбо Revo Крепкий</h3>
+                    <p class="card__description">Высокое содержание кофеина для бодрости на работе.</p>
+                    <p class="card__price">Цена: 147.000 ₽</p>
+                    <div class="card__actions">
+                        <button type="button" class="button button--primary">Купить сейчас</button>
+                        <a href="#" class="card__link">Подробнее</a>
+                    </div>
                 </article>
 
-                <article class="product-card">
-                    <img src="assets/img/combo-everyday.png" alt="Комбо Revo Каждый день">
-                    <h3>Комбо Revo Каждый день</h3>
-                    <p>Мягкий вкус робусты с лёгким ароматом.</p>
-                    <p>Цена: 156.000 ₽</p>
-                    <button type="button">Купить сейчас</button>
-                    <a href="#">Подробнее</a>
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="assets/img/combo-everyday.png" alt="Комбо Revo Каждый день" class="card__image">
+                    </div>
+                    <h3 class="card__title">Комбо Revo Каждый день</h3>
+                    <p class="card__description">Мягкий вкус робусты с лёгким ароматом.</p>
+                    <p class="card__price">Цена: 156.000 ₽</p>
+                    <div class="card__actions">
+                        <button type="button" class="button button--primary">Купить сейчас</button>
+                        <a href="#" class="card__link">Подробнее</a>
+                    </div>
                 </article>
 
-                <article class="product-card">
-                    <img src="assets/img/combo-honey.png" alt="Комбо Revo Мёд">
-                    <h3>Комбо Revo Мёд</h3>
-                    <p>Арабика с обработкой мёдом, особый аромат.</p>
-                    <p>Цена: 165.000 ₽</p>
-                    <button type="button">Купить сейчас</button>
-                    <a href="#">Подробнее</a>
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <img src="assets/img/combo-honey.png" alt="Комбо Revo Мёд" class="card__image">
+                    </div>
+                    <h3 class="card__title">Комбо Revo Мёд</h3>
+                    <p class="card__description">Арабика с обработкой мёдом, особый аромат.</p>
+                    <p class="card__price">Цена: 165.000 ₽</p>
+                    <div class="card__actions">
+                        <button type="button" class="button button--primary">Купить сейчас</button>
+                        <a href="#" class="card__link">Подробнее</a>
+                    </div>
                 </article>
             </div>
         </section>
     </main>
 
-    <footer id="contact">
-        <p>Revo Coffee - 2018.</p>
-        <p>Контакты: info@revo-coffee.ru</p>
+    <footer id="contact" class="footer page__footer">
+        <div class="footer__inner">
+            <p class="footer__text">Revo Coffee - 2018.</p>
+            <p class="footer__text">Контакты: info@revo-coffee.ru</p>
+        </div>
     </footer>
 </body>
-
 </html>
