@@ -8,34 +8,45 @@
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body class="page">
     <header class="header">
-        <div class="header__inner">
-            <div class="header__logo">
-                <a href="#" class="header__logo-link">
-                    <img src="assets/img/LOGO.png" alt="Logo" class="header__logo-image">
-                </a>
-            </div>          
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link">
+                        <img src="assets/img/LOGO.png" alt="Logo" class="header__logo-image">
+                    </a>
+                </div>
 
-            <nav class="header__nav nav">
-                <ul class="nav__list">
-                    <li class="nav__item nav__item--active">
-                        <a class="nav__link" href="#about">О нас</a>
-                    </li>
-                    <li class="nav__item nav__item--active">
-                        <a class="nav__link" href="#coffee">Кофе</a>
-                    </li>
-                    <li class="nav__item nav__item--active">
-                        <a class="nav__link" href="#combo">Комбо</a>
-                    </li>
-                    <li class="nav__item nav__item--active">
-                        <a class="nav__link" href="#giftset">Подарочные наборы</a>
-                    </li>
-                    <li class="nav__item nav__item--active">
-                        <a class="nav__link" href="#contact">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+                <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+
+                <nav class="nav" id="mainNav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link active" href="#about">О нас</a>
+                        </li>
+                        <li class="nav__item ">
+                            <a class="nav__link" href="#coffee">Кофе</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#combo">Комбо</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#giftset">Подарочные наборы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="button button--primary header__cta">Заказать</button>
+            </div>
         </div>
     </header>
 
@@ -66,7 +77,7 @@
             </header>
 
 
-             <div class="section__content cards">
+            <div class="section__content cards">
                 <article class="card">
                     <div class="card__image-wrapper">
                         <img src="assets/img/morning.png" alt="Кофе Revo Утро" class="card__image">
@@ -201,5 +212,11 @@
             <p class="footer__text">Контакты: info@revo-coffee.ru</p>
         </div>
     </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+    <script src="scripts/menu.js"></script>
+
+    
 </body>
+
 </html>
